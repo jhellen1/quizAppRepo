@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    align-content: center;
+    background-image: url("http://img.wennermedia.com/social/rs-black-sabbath-e777e412-7a2a-4782-b108-63871f9a2976.jpg");
+    background-size: contain;
+    background-position: center;
+}
+.progress-container {
+    display: flex;
+    justify-content: space-around;
+}
+.select-answer {
+    text-align: left;
+}
+.select-answer input {
+    margin-left: 38%;
+}
+p, label, button {
+    font-weight: bold;
+}
+.parent-containers {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 5% 0;
+}
+.top-container {
+    text-align: center;
+    background-color: white;
+    opacity: .93;
+    min-width: 400px;
+    max-width: 600px;
+}
+.bottom-container {
+    text-align: center;
+    background-color: white;
+    opacity: .93;
+    min-width: 400px;
+    max-width: 600px;
+}
+
+button {
+    border: 3px solid black;
+    border-radius: 3px;
+    width: 120px;
+    height: auto;
+    cursor: pointer;
+    margin: 3% 0;
+}
+button:hover {
+    background-color:black;
+    color: white;
+}
+.feedback-text {
+    color: green;
+}
