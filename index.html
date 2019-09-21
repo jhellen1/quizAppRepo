@@ -14,12 +14,14 @@
                     <div class="quiz-title">
                         <h1>Rock Trivia Quiz</h1>
                     </div>
-                    <div class ="progress-container">
-                        <div class="score">
-                            <h2>Score: 0/10</h2>
-                        </div>
-                        <div class="question-number">
-                            <h2>Question: 1/10</h2>
+                    <div class="invisible" id="scoreCardVisibility">
+                        <div class ="progress-container">
+                            <div class="score">
+                                <h2>Score: 0/10</h2>
+                            </div>
+                            <div class="question-number">
+                                <h2>Question: 1/10</h2>
+                            </div>
                         </div>
                     </div>
                 </fieldset>
@@ -30,21 +32,35 @@
             <div class="parent-containers">
                 <form>
                     <fieldset class="bottom-container">
-                        <div>
-                            <h3>Name the deceased bassist that was the original (and best ever) bass guitar player in the band Metallica:</h3>
+                        <div id="introText">
+                            <h3>Are you a Rock aficionado?<br>Test your knowledge with our quiz!</h3>
                         </div>
-                        <div class="select-answer">
-                            <input type="radio" name="chooseone" value="Geezer Butler"><label for="Geezer Butler">Geezer Butler</label><br>
-                            <input type="radio" name="chooseone" value="Lemmy Kilmister"><label for="Lemmy Kilmister">Lemmy Kilmister</label><br>
-                            <input type="radio" name="chooseone" value="Cliff Burton"><label for="Cliff Burton">Cliff Burton</label><br>
-                            <input type="radio" name="chooseone" value="Jason Newsted"><label for="Jason Newsted">Jason Newsted</label>
+                        <div class="invisible" id="questionAnswerCard">
+                            <div>
+                                <h3>Name the deceased bassist that was the original (and best ever) bass guitar player in the band Metallica:</h3>
+                            </div>
+                            <div class="select-answer">
+                                <input type="radio" name="chooseone" value="Geezer Butler"><label for="Geezer Butler">Geezer Butler</label><br>
+                                <input type="radio" name="chooseone" value="Lemmy Kilmister"><label for="Lemmy Kilmister">Lemmy Kilmister</label><br>
+                                <input type="radio" name="chooseone" value="Cliff Burton"><label for="Cliff Burton">Cliff Burton</label><br>
+                                <input type="radio" name="chooseone" value="Jason Newsted"><label for="Jason Newsted">Jason Newsted</label>
+                            </div>
                         </div>
-                        <div>
+                        <div id="next">
+                            <button type="Submit">Next</button>
+                        </div>
+                        <div class="invisible" id="submit">
                             <button type="button">Submit</button>
                         </div>
                     </fieldset>
                 </form>
             </div>
         </main>
+        <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous">
+        </script>
+        <script type="text/javascript" src="script.js"></script>
     </body>
 </html>
