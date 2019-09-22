@@ -14,7 +14,7 @@ const store = [
     wrongAnswerThree: "Billy Boyo"
   },
     questionNumberThree = {
-    text: "The \'Big Four\' Thrash Metal bands that popularized the genre are Metallica, Megadeth, Anthrax and ________?",
+    text: "The \"Big Four\" Thrash Metal bands that popularized the genre are Metallica, Megadeth, Anthrax and ________?",
     correctAnswer: "Slayer",
     wrongAnswerOne: "Venom",
     wrongAnswerTwo: "Mayhem",
