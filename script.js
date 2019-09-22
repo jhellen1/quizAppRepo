@@ -126,7 +126,7 @@ submitButton.click(function(e) {
       redAnswerTag.removeClass('invisible');
     }
   } else {
-    alert('Please choose an answer!');
+    alert('Choose an answer before you click submit, Wastoid!');
   }
   
   console.log(inputUserValue);
