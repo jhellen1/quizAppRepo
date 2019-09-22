@@ -21,11 +21,15 @@ body {
 .wrongAnswer {
     color: red;
 }
+.select-answer-parent {
+    text-align: center;
+}
 .select-answer {
+    display: inline-block;
     text-align: left;
 }
 .select-answer input {
-    margin-left: 38%;
+    align-content: justify;
 }
 p, label, button {
     font-weight: bold;

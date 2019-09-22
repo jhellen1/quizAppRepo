@@ -14,8 +14,8 @@ const store = [
     wrongAnswerThree: "Billy Boyo"
   },
     questionNumberThree = {
-    text: "What band was formed out of the remaining members of the failed Black Metal band Hellhammer?",
-    correctAnswer: "Celtic Frost",
+    text: "The \'Big Four\' Thrash Metal bands that popularized the genre are Metallica, Megadeth, Anthrax and ________?",
+    correctAnswer: "Slayer",
     wrongAnswerOne: "Venom",
     wrongAnswerTwo: "Mayhem",
     wrongAnswerThree: "Bathory"
@@ -140,20 +140,18 @@ nextButton.click(function(e) {
   console.log(questionNumber);
   if (questionNumber === 10) {
     score = score * 10;
+    $('#scoreCardVisibility').addClass('invisible');
     $('#questionAnswerCard').addClass('invisible');
     $('#introText').replaceWith(`
         <h1>Thanks for playing!<h1>
         <h1>Your Score: ${score}%</h1>
     `);
-    // remove class invisible from reset button, add to submit button
     $('#tryAgain').removeClass('invisible');
     $('#submit').addClass('invisible');
-    // reset button click even listener
     $('#tryAgain').click(function(e) {
       e.preventDefault();
       location.reload();
     });
-    // inside reset listener add location.reload();
   }
   $('#question').replaceWith(`<div id="question"><h3>${store[questionNumber].text}</h3></div>`);
   
