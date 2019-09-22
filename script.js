@@ -124,6 +124,7 @@ submitButton.click(function(e) {
       `);
     } else {
       redAnswerTag.removeClass('invisible');
+      // $('#multipleChoice').replaceWith(`Correct answer: ${correctAnswerPointer}`);
     }
   } else {
     alert('Choose an answer before you click submit, Wastoid!');
