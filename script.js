@@ -116,6 +116,7 @@ submitButton.click(function(e) {
     buttonSwitchNext();
     if (inputUserValue === correctAnswerPointer) {
       greenAnswerTag.removeClass('invisible');
+      $('#multipleChoice').replaceWith(`<div id="multipleChoice">Correct answer: ${correctAnswerPointer}</div>`);
       score++;
       $('#score').replaceWith(`
         <div class="score" id="score">
@@ -124,7 +125,7 @@ submitButton.click(function(e) {
       `);
     } else {
       redAnswerTag.removeClass('invisible');
-      // $('#multipleChoice').replaceWith(`Correct answer: ${correctAnswerPointer}`);
+      $('#multipleChoice').replaceWith(`<div id="multipleChoice">Correct answer: ${correctAnswerPointer}</div>`);
     }
   } else {
     alert('Choose an answer before you click submit, Wastoid!');
