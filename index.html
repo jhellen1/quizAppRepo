@@ -16,10 +16,10 @@
                     </div>
                     <div class="invisible" id="scoreCardVisibility">
                         <div class ="progress-container">
-                            <div class="score">
+                            <div class="score" id="score">
                                 <h2>Score: 0/10</h2>
                             </div>
-                            <div class="question-number">
+                            <div class="question-number" id="currentQuestion">
                                 <h2>Question: 1/10</h2>
                             </div>
                         </div>
@@ -30,27 +30,43 @@
 
         <main>
             <div class="parent-containers">
-                <form>
+                <form id='questionForm'>
                     <fieldset class="bottom-container">
                         <div id="introText">
                             <h3>Are you a Rock aficionado?<br>Test your knowledge with our quiz!</h3>
                         </div>
                         <div class="invisible" id="questionAnswerCard">
-                            <div>
+                            <div id="question">
                                 <h3>Name the deceased bassist that was the original (and best ever) bass guitar player in the band Metallica:</h3>
                             </div>
-                            <div class="select-answer">
+                            <div class="invisible" id="greenCorrectAnswer">
+                                <fieldset class="correctAnswer">
+                                    <h2>Correct! Nice job, Rock God...</h2>
+                                </fieldset>
+                            </div>
+                            <div class="invisible" id="redWrongAnswer">
+                                    <fieldset class="wrongAnswer">
+                                        <h2>WRONG!!! Nice try, POSER...</h2>
+                                    </fieldset>
+                                </div>
+                            <div class="select-answer" id="multipleChoice">
                                 <input type="radio" name="chooseone" value="Geezer Butler"><label for="Geezer Butler">Geezer Butler</label><br>
                                 <input type="radio" name="chooseone" value="Lemmy Kilmister"><label for="Lemmy Kilmister">Lemmy Kilmister</label><br>
                                 <input type="radio" name="chooseone" value="Cliff Burton"><label for="Cliff Burton">Cliff Burton</label><br>
                                 <input type="radio" name="chooseone" value="Jason Newsted"><label for="Jason Newsted">Jason Newsted</label>
                             </div>
                         </div>
-                        <div id="next">
-                            <button type="Submit">Next</button>
+                        <div id="start">
+                            <button type="Submit">Start</button>
                         </div>
+                        <div class="invisible" id="next">
+                                <button type="Submit">Next</button>
+                            </div>
                         <div class="invisible" id="submit">
                             <button type="button">Submit</button>
+                        </div>
+                        <div class="invisible" id="tryAgain">
+                                <button type="reset">Try Again!</button>
                         </div>
                     </fieldset>
                 </form>

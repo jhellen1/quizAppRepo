@@ -4,8 +4,9 @@
 body {
     align-content: center;
     background-image: url("http://img.wennermedia.com/social/rs-black-sabbath-e777e412-7a2a-4782-b108-63871f9a2976.jpg");
-    background-size: contain;
+    background-size: 100%;
     background-position: center;
+    /* background-repeat: no-repeat; */
 }
 .invisible {
     display: none;
@@ -13,6 +14,12 @@ body {
 .progress-container {
     display: flex;
     justify-content: space-around;
+}
+.correctAnswer {
+    color: green;
+}
+.wrongAnswer {
+    color: red;
 }
 .select-answer {
     text-align: left;
