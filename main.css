@@ -6,8 +6,12 @@ body {
     text-decoration-style: solid;
     align-content: center;
     background-image: url("http://img.wennermedia.com/social/rs-black-sabbath-e777e412-7a2a-4782-b108-63871f9a2976.jpg");
-    background-size: 100%;
-    background-position: center;
+    background-color: #000000;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+h1 {
+    margin: 15px auto;
 }
 .invisible {
     display: none;
@@ -16,7 +20,16 @@ body {
     display: flex;
     justify-content: space-around;
 }
+.score {
+    margin-right: 10px;
+}
+.question-number {
+    margin-left: 10px;
+}
 .correctAnswer {
+    display: inline-block;
+    padding-right: 15px;
+    padding-left: 15px;
     font-family: 'Mystery Quest', cursive;
     font-size: x-large;
     /* font-weight: bold; */
@@ -25,6 +38,9 @@ body {
     border: 3px solid #008000;
 }
 .wrongAnswer {
+    display: inline-block;
+    padding-right: 15px;
+    padding-left: 15px;
     font-family: 'Nosifer', cursive;
     color: #ff0000;
     background-color: #000000;
@@ -57,8 +73,9 @@ p, label, button {
     border-radius: 3px;
     text-align: center;
     color: #e4e4e4;
-    min-width: 400px;
-    max-width: 600px;
+    display: inline-block;
+    /* min-width: 400px;
+    max-width: 600px; */
 }
 .bottom-container {
     background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('https://i.pinimg.com/originals/49/e5/3a/49e53ac6960279f387be3689a075e94e.jpg');
@@ -69,8 +86,9 @@ p, label, button {
     text-align: center;
     color: #e4e4e4;
     background-color: #000000;
-    min-width: 400px;
-    max-width: 600px;
+    display: inline-block;
+    /* min-width: 400px;
+    max-width: 600px; */
 }
 
 button {
@@ -85,4 +103,9 @@ button {
 button:hover {
     background-color:#000000;
     color: #e4e4e4;
+}
+@media (min-width: 768px) {
+    body {
+        background-size: cover;
+    }
 }
