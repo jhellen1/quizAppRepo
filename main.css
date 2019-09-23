@@ -96,6 +96,7 @@ p, label, button {
     color: #e4e4e4;
     background-color: #000000;
     display: inline-block;
+    max-width: 80vw;
 }
 label:hover {
     cursor: pointer;
@@ -115,8 +116,25 @@ button:hover {
     background-color:#000000;
     color: #e4e4e4;
 }
+@media (min-width: 768px) {
+    body {
+        background-size: cover;
+    }
+    .top-container {
+        max-width: 75vw;
+    }
+    .bottom-container{
+        max-width: 75vw;
+    }
+}
 @media (min-width: 320px) {
     body {
         background-size: cover;
+    }
+    .top-container {
+        max-width: 70vw;
+    }
+    .bottom-container{
+        max-width: 70vw;
     }
 }
