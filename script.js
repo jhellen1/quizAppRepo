@@ -128,7 +128,7 @@ submitButton.click(function(e) {
       $('#multipleChoice').replaceWith(`<div id="multipleChoice">Answer: ${correctAnswerPointer}</div>`);
     }
   } else {
-    alert('Choose an answer before you click submit, Wastoid!');
+    alert('Choose an answer before you click \"Submit\", Wastoid!');
   }
   
   console.log(inputUserValue);
