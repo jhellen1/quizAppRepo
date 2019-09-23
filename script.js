@@ -172,37 +172,37 @@ nextButton.click(function(e) {
   if (questionNumber === 2 || questionNumber === 7 || questionNumber === 9) {
     $('#multipleChoice').replaceWith(`
     <div class="select-answer" id="multipleChoice">
-      <input type="radio" name="chooseone" value="${wrongAnswerThreePointer}"><label for="${wrongAnswerThreePointer}">${wrongAnswerThreePointer}</label><br>
-      <input type="radio" name="chooseone" value="${wrongAnswerTwoPointer}"><label for="${wrongAnswerTwoPointer}">${wrongAnswerTwoPointer}</label><br>
-      <input type="radio" name="chooseone" value="${wrongAnswerOnePointer}"><label for="${wrongAnswerOnePointer}">${wrongAnswerOnePointer}</label><br>
-      <input type="radio" name="chooseone" value="${correctAnswerPointer}"><label for="${correctAnswerPointer}">${correctAnswerPointer}</label>
+      <input id="${wrongAnswerThreePointer}" type="radio" name="chooseone" value="${wrongAnswerThreePointer}"><label for="${wrongAnswerThreePointer}">${wrongAnswerThreePointer}</label><br>
+      <input id="${wrongAnswerTwoPointer}" type="radio" name="chooseone" value="${wrongAnswerTwoPointer}"><label for="${wrongAnswerTwoPointer}">${wrongAnswerTwoPointer}</label><br>
+      <input id="${wrongAnswerOnePointer}" type="radio" name="chooseone" value="${wrongAnswerOnePointer}"><label for="${wrongAnswerOnePointer}">${wrongAnswerOnePointer}</label><br>
+      <input id="${correctAnswerPointer}" type="radio" name="chooseone" value="${correctAnswerPointer}"><label for="${correctAnswerPointer}">${correctAnswerPointer}</label>
     </div>
   `);
   } else if (questionNumber === 4 || questionNumber === 6) {
     $('#multipleChoice').replaceWith(`
     <div class="select-answer" id="multipleChoice">
-    <input type="radio" name="chooseone" value="${correctAnswerPointer}"><label for="${correctAnswerPointer}">${correctAnswerPointer}</label><br>
-      <input type="radio" name="chooseone" value="${wrongAnswerThreePointer}"><label for="${wrongAnswerThreePointer}">${wrongAnswerThreePointer}</label><br>
-      <input type="radio" name="chooseone" value="${wrongAnswerTwoPointer}"><label for="${wrongAnswerTwoPointer}">${wrongAnswerTwoPointer}</label><br>
-      <input type="radio" name="chooseone" value="${wrongAnswerOnePointer}"><label for="${wrongAnswerOnePointer}">${wrongAnswerOnePointer}</label>
+    <input id="${correctAnswerPointer}" type="radio" name="chooseone" value="${correctAnswerPointer}"><label for="${correctAnswerPointer}">${correctAnswerPointer}</label><br>
+      <input id="${wrongAnswerThreePointer}" type="radio" name="chooseone" value="${wrongAnswerThreePointer}"><label for="${wrongAnswerThreePointer}">${wrongAnswerThreePointer}</label><br>
+      <input id="${wrongAnswerTwoPointer}" type="radio" name="chooseone" value="${wrongAnswerTwoPointer}"><label for="${wrongAnswerTwoPointer}">${wrongAnswerTwoPointer}</label><br>
+      <input id="${wrongAnswerOnePointer}" type="radio" name="chooseone" value="${wrongAnswerOnePointer}"><label for="${wrongAnswerOnePointer}">${wrongAnswerOnePointer}</label>
     </div>
   `);
   } else if (questionNumber === 1 || questionNumber === 8 || questionNumber === 3) {
     $('#multipleChoice').replaceWith(`
     <div class="select-answer" id="multipleChoice">
-      <input type="radio" name="chooseone" value="${wrongAnswerThreePointer}"><label for="${wrongAnswerThreePointer}">${wrongAnswerThreePointer}</label><br>
-      <input type="radio" name="chooseone" value="${wrongAnswerTwoPointer}"><label for="${wrongAnswerTwoPointer}">${wrongAnswerTwoPointer}</label><br>
-      <input type="radio" name="chooseone" value="${correctAnswerPointer}"><label for="${correctAnswerPointer}">${correctAnswerPointer}</label><br>
-      <input type="radio" name="chooseone" value="${wrongAnswerOnePointer}"><label for="${wrongAnswerOnePointer}">${wrongAnswerOnePointer}</label>
+      <input id="${wrongAnswerThreePointer}" type="radio" name="chooseone" value="${wrongAnswerThreePointer}"><label for="${wrongAnswerThreePointer}">${wrongAnswerThreePointer}</label><br>
+      <input id="${wrongAnswerTwoPointer}" type="radio" name="chooseone" value="${wrongAnswerTwoPointer}"><label for="${wrongAnswerTwoPointer}">${wrongAnswerTwoPointer}</label><br>
+      <input id="${correctAnswerPointer}" type="radio" name="chooseone" value="${correctAnswerPointer}"><label for="${correctAnswerPointer}">${correctAnswerPointer}</label><br>
+      <input id="${wrongAnswerOnePointer}" type="radio" name="chooseone" value="${wrongAnswerOnePointer}"><label for="${wrongAnswerOnePointer}">${wrongAnswerOnePointer}</label>
     </div>
     `);
   } else {
     $('#multipleChoice').replaceWith(`
     <div class="select-answer" id="multipleChoice">
-      <input type="radio" name="chooseone" value="${wrongAnswerOnePointer}"><label for="${wrongAnswerOnePointer}">${wrongAnswerOnePointer}</label><br>
-      <input type="radio" name="chooseone" value="${correctAnswerPointer}"><label for="${correctAnswerPointer}">${correctAnswerPointer}</label><br>
-      <input type="radio" name="chooseone" value="${wrongAnswerTwoPointer}"><label for="${wrongAnswerTwoPointer}">${wrongAnswerTwoPointer}</label><br>
-      <input type="radio" name="chooseone" value="${wrongAnswerThreePointer}"><label for="${wrongAnswerThreePointer}">${wrongAnswerThreePointer}</label>
+      <input id="${wrongAnswerOnePointer}" type="radio" name="chooseone" value="${wrongAnswerOnePointer}"><label for="${wrongAnswerOnePointer}">${wrongAnswerOnePointer}</label><br>
+      <input id="${correctAnswerPointer}" type="radio" name="chooseone" value="${correctAnswerPointer}"><label for="${correctAnswerPointer}">${correctAnswerPointer}</label><br>
+      <input id="${wrongAnswerTwoPointer}" type="radio" name="chooseone" value="${wrongAnswerTwoPointer}"><label for="${wrongAnswerTwoPointer}">${wrongAnswerTwoPointer}</label><br>
+      <input id="${wrongAnswerThreePointer}" type="radio" name="chooseone" value="${wrongAnswerThreePointer}"><label for="${wrongAnswerThreePointer}">${wrongAnswerThreePointer}</label>
     </div>
   `);
   }
