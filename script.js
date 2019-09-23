@@ -1,6 +1,6 @@
 const store = [
     questionNumberOne = {
-    text: "Name the deceased bassist that was the original (and best ever) bass guitar player in the band Metallica:",
+    text: "Name the deceased bassist that was the original (and best) bass guitar player in the band Metallica:",
     correctAnswer: "Cliff Burton",
     wrongAnswerOne: "Geezer Butler",
     wrongAnswerTwo: "Lemmy Kilmister",
